@@ -1,0 +1,118 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+} */
+
+
+:root{
+    --orange: #f9ba60;
+    --pink: #e9768f;
+    --black: #1d1c1c;
+    --white: #fff;
+    --light-color: #666;
+    --red: #ff004f;
+    --blue: #071952;
+    --box-shadow: 0.5rem 1.5rem rgba(0,0,0,.1);
+
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    transition: .2s;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.header{
+    padding: 2rem 7%;
+    position: fixed;
+    left: 0; right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--blue);
+
+}
+#logo{
+    color: var(--orange);
+    font-size: 30px;
+}
+.nav a{
+    color: var(--white);
+    font-size: 1.8rem;
+    margin-left: 1rem;
+}
+
+.nav a:hover{
+    color: var(--orange);
+}
+
+.icon-header div{
+    color: white;
+    margin-left: 2rem;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.icon-header div:hover{
+    color: var(--red);
+}
+
+#menu-btn{
+    display: none;
+}
+
+
+
+
+
+/* .cover {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(3, 8, 30, 0.7), rgba(128, 145, 212, 0.7)), url(../images/bann3.avif);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+} */
+
+
+
+@media (max-width:767px){
+    html{
+        font-size: 55%;
+    }
+    #menu-btn{
+        display: inline-block;
+    }
+    .header{
+        padding: 2rem;
+    }
+    .nav{
+        position: absolute;
+        top: 100%;
+        width: 80%;
+        left: 10%;
+        box-shadow: rgba(0,0,0,.24) 0px 3px 8px;
+        border-radius: 15px;
+    }
+
+    .nav a{
+        color: var(--black);
+        display: block;
+        margin: 1rem;
+    }
+}
